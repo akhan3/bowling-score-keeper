@@ -27,7 +27,7 @@ endif
 CXXFLAGS	:= -Wall -W $(INCPATH) $(COMMONFLAGS)
 
 TARGET		:= bowling
-OBJS		:= read_write_rolls.o bowling.o
+OBJS		:= generate_rolls.o bowling.o
 
 $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $@ $(OBJS)
